@@ -1,0 +1,73 @@
+.navbar {
+  height: 5rem;
+  width: 100vw;
+  max-width: 75rem;
+  margin-top: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.TM-logo {
+  font-size: 2rem;
+}
+.logo {
+  object-fit: cover;
+  height: 3rem;
+  width: 4rem;
+}
+
+.desktopMenuListItem {
+  font-family: "Arial", sans-serif;
+  font-size: larger;
+  margin: 1rem;
+  cursor: pointer;
+  color: rgb(31, 31, 31);
+}
+
+.desktopMenuListItem:hover {
+  color: blue;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid blue;
+}
+
+.desktopMenuBtn {
+  background-color: #1c1a1b; /* A nice, professional green */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  padding: 12px 24px; /* Button padding for a larger click area */
+  font-size: 16px; /* Adjust font size */
+  font-family: "Arial", sans-serif; /* Font family */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth hover transitions */
+}
+
+.desktopMenuBtn:hover {
+  background-color: #fafafa; /* Slightly darker green on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  transform: translateY(-2px); /* Small lift effect on hover */
+}
+
+.desktopMenuBtn {
+  background: white;
+  font-size: small;
+  color: rgb(0, 0, 0);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: 2rem;
+}
+
+.desktopMenuImg {
+  object-fit: cover;
+  height: 2.5rem;
+  width: 2.5rem;
+}
