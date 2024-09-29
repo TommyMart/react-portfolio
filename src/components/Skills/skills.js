@@ -8,7 +8,7 @@ const Skills = () => {
   return (
     <section id='skills'>
         <span className='skillTitle'><h1>About Me</h1></span>
-        <p className='skillsDesc'>Tom is an enthusiastic and skilled full-stack developer with a strong background in creating visually appealing and user-friendly applications. He holds a bachelor's degree in marketing and a diploma in visual design, which, alongside his recent education in full-stack web development, enables him to seamlessly integrate design and functionality in every project. Known for his keen eye for detail, logical thinking, and strong work ethic, Tom is inherently self-motivated and dedicated to achieving his goals. He seeks to channel his passion and determination into a career that fosters professional growth while creating innovative applications that contribute positively to society and the environment.</p><br/>
+        <p className='skillsDesc'>Tom is an enthusiastic and skilled junior full-stack developer with a strong background in creating visually appealing and user-friendly applications. He holds a bachelor's degree in marketing and a diploma in visual design, which, alongside his recent education in full-stack web development, enables him to seamlessly integrate design and functionality in every project. Known for his keen eye for detail, logical thinking, and strong work ethic, Tom is inherently self-motivated and dedicated to achieving his goals. He seeks to channel his passion and determination into a career that fosters professional growth while creating innovative applications that contribute positively to society and the environment.</p><br/>
         
         <div className="skillBars">
         <div className='skillBar'>
