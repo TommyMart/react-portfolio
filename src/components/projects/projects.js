@@ -1,6 +1,5 @@
 
 import './projects.css';
-import { Link } from 'react-router-dom';
 import api from '../../assets/api.png'
 import pythonApp from '../../assets/highscores.png'
 import pokemon from '../../assets/pokemon.png'
@@ -13,12 +12,12 @@ const Projects = () => {
   return (
     <section id='projects'>
         <h2 className='projectsTitle'>Projects</h2>
-        <span className='projectsDesc'>The projects in my portfolio come from a mix of academic assignments, personal passion projects, and ongoing work, including my current full-stack application using the MERN stack for my final assignment. Some were built as part of structured coursework, where I applied theoretical knowledge to create real-world, functional applications. Others were developed purely for fun, driven by my curiosity to explore new technologies and sharpen my skills. This blend of formal education, self-directed exploration, and continuous project development has strengthened my expertise as a full-stack developer.</span>
+        <span className='projectsDesc'>The projects in my portfolio come from a mix of academic assignments, personal passion projects, and ongoing work, not yet including my current full-stack application using the MERN stack for my final assignment. Some were built as part of structured coursework, where I applied theoretical knowledge to create real-world, functional applications. Others were developed purely for fun, driven by my curiosity to explore new technologies and sharpen my skills. This blend of formal education, self-directed exploration, and continuous project development has strengthened my expertise as a full-stack developer.</span>
         <div className='projects'>
             <div className='projectBar'>
                 
                 <div className='projectBarText'>
-                    <h2 className='projectTitle'>Event RestfulAPI</h2>
+                    <h2 className='projectTitle'>API Webserver</h2>
                     <img src={api} alt='' className='projectBarImg'></img>
                     
                     <p className='projectDesc'>One of my notable projects, completed as part of an assignment for which I received a high distinction, was my introduction to backend development and working with APIs. I built a RESTful API web server using Python, Flask, SQLAlchemy, and PostgreSQL, where user information is authorised via JWT and securely hashed using Bcrypt. This project helped me develop a deep understanding of API architecture and secure user authentication systems.</p>

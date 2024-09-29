@@ -111,9 +111,9 @@
   margin-right: 0.5rem;
   object-fit: cover;
 }
-
+/* 
 .btn {
-  background: rgb(191, 193, 192);
+  background: rgb(241, 242, 242);
   margin: 1rem 0;
   padding: 0.75rem 2rem;
   border: none;
@@ -132,4 +132,42 @@
 
 .btn:hover {
   background: #f0f0f0; /* Slight background change on hover */
+
+.btn {
+  background-color: #1c1a1b; /* A nice, professional green */
+
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  padding: 12px 24px; /* Button padding for a larger click area */
+  font-size: 16px; /* Adjust font size */
+  font-family: "Arial", sans-serif; /* Font family */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth hover transitions */
+}
+
+.btn:hover {
+  background-color: #121111; /* Slightly darker green on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  transform: translateY(-2px); /* Small lift effect on hover */
+}
+
+.btn {
+  background: rgb(19, 18, 18);
+  font-size: small;
+  color: rgb(255, 255, 255);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 0 1rem; */
+  margin-top: 1rem;
+  border-radius: 2rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.introButtons {
+  display: flex;
+  gap: 5px;
 }

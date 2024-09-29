@@ -1,9 +1,6 @@
 import React from 'react';
 import './intro.css';
-import bg from '../../assets/profile-pic.jpeg';
-import fish from '../../assets/yellow-fish.png'
-import { Link } from 'react-scroll';
-import suitCase from '../../assets/suitcase.png'
+import { Link } from 'react-router-dom';
 import html from '../../assets/html.png';
 import JS from '../../assets/js.png';
 import css from '../../assets/css.png'
@@ -17,6 +14,8 @@ import adobe from '../../assets/adobe.png'
 import figma from '../../assets/figma.png'
 import github from '../../assets/github.png'
 import linkedin from '../../assets/linkedin.png'
+import download from '../../assets/download.png'
+import mail from '../../assets/mail.png'
 
 
 
@@ -50,9 +49,12 @@ const Intro = () => {
               <img src={linkedin} alt='Express' className='techLinks' />
               </a>
               </div>
-
+              <div className='introButtons'>
+              <a href='./resume26:9.pdf' download><button className='btn'><img src={download} alt='suitcase' className='suitcase'/>Resume</button></a>
+              <a href='mailto:thomas.h.martin89@gmail.com' ><button className='btn'><img src={mail} alt='suitcase' className='suitcase'/>Contact Me</button></a>
+              </div>
             </div>
-            {/* <Link><button className='btn'><img src={suitCase} alt='suitcase' className='suitcase'/>Hire Me</button></Link> */}
+            
         </div>
 
        

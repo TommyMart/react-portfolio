@@ -15,7 +15,7 @@
   font-weight: 600;
   padding-top: 3rem;
   margin-bottom: 1.5rem;
-  margin-left: 3rem;
+  /* margin-left: 3rem; */
 }
 
 .skillsDesc {
@@ -39,9 +39,11 @@
 .skillBar {
   display: flex;
   margin: 1rem;
+  margin-top: 2rem;
   padding: 1rem;
   border-radius: 0.5rem;
   background: rgb(241, 242, 242);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
 }
 
 .skillBarImg {

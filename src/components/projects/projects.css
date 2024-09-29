@@ -65,6 +65,7 @@
   padding: 1rem;
   border-radius: 0.5rem;
   background: rgb(241, 242, 242);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
 }
 
 .projectBarText {

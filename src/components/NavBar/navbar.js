@@ -2,6 +2,7 @@ import React from 'react';
 import './navbar.css';
 import contactImg from '../../assets/speech-bubble.png'
 import { Link } from 'react-scroll';
+import mail from '../../assets/mail.png'
 
 
 const Navbar = () => {
@@ -61,7 +62,7 @@ const Navbar = () => {
           document.getElementById('contactPage').scrollIntoView({behavior: 'smooth'});
         }}>
             <img src={contactImg} alt='' className='desktopMenuImg' />
-            Contact Me
+            Message
         </button>
       </section>
     </nav>
