@@ -1,7 +1,7 @@
 .navbar {
   height: 5rem;
   width: 100vw;
-  max-width: 75rem;
+  /* max-width: 75rem; */
   margin-top: 0 auto;
   padding: 1rem 2rem;
   display: flex;
@@ -10,10 +10,22 @@
   position: sticky;
   top: 0;
   z-index: 3;
+  background-color: rgb(36, 38, 38);
+}
+
+.navbar-content {
+  width: 100%;
+
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .TM-logo {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: rgb(64, 64, 198);
+  font-weight: 800;
 }
 .logo {
   object-fit: cover;
@@ -27,12 +39,13 @@
   margin: 1rem;
   cursor: pointer;
   color: rgb(31, 31, 31);
+  color: white;
 }
 
 .desktopMenuListItem:hover {
-  color: blue;
+  color: rgb(64, 64, 198);
   padding-bottom: 0.5rem;
-  border-bottom: 3px solid blue;
+  border-bottom: 3px solid rgb(64, 64, 198);
 }
 
 .desktopMenuBtn {

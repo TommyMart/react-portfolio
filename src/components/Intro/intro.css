@@ -1,34 +1,46 @@
 #intro {
   height: calc(100vh - 4rem);
   width: 100vw;
-  max-width: 75rem;
+  /* max-width: 75rem; */
+
   margin: 0 auto;
   overflow: hidden;
+}
+
+.introContent {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
 }
 
 .bg {
   position: absolute;
   top: 10rem;
-  margin-right: 17rem;
+  margin-right: 20vw;
   right: 0;
   z-index: -1;
   object-fit: cover;
   border-radius: 0.5rem;
-  height: 35%; /* Keeps the size as you liked it */
+  height: 30%;
   width: auto;
+  max-width: 75rem;
+  display: flex;
 
   /* Post-it Note Styling */
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   padding: 0.5rem;
   border: 2px solid #f2f2f2;
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15); /* Shadow for depth */
-  transform: rotate(-2deg); /* Tilt to look like a post-it */
+  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.5); /* Longer shadow for depth */
+  transform: rotate(-2deg);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .bg:hover {
-  transform: rotate(-2deg) translate(20px, -20px) scale(1.02); /* Moves image away when hovered */
-  box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced hover shadow */
+  transform: rotate(-2deg) translate(20px, -20px) scale(1.02);
+  box-shadow: 2px 12px 30px rgba(0, 0, 0, 0.6); /* Longer, darker shadow on hover */
 }
 
 .introContent {
@@ -48,12 +60,48 @@
 }
 
 .introName {
-  color: blue;
+  color: rgb(64, 64, 198);
+  transition: transform 0.3s ease, font-size 0.3s ease; /* Adds smooth transition */
+}
+
+.introName:hover {
+  transform: scale(1.1); /* Slightly enlarges the text */
+  font-size: 110%; /* Optionally increase the font size */
 }
 
 .introPara {
+  margin-top: 1rem;
   font-size: medium;
   font-weight: 100;
+}
+
+.techLogoWrapper {
+  margin-top: 1rem;
+}
+
+.logoLinks {
+  display: flex; /* Use flexbox for alignment */
+  align-items: left; /* Center items vertically */
+  justify-content: left; /* Align items to the left */
+}
+
+.techLogos {
+  height: 2.5rem; /* Size of tech logos */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.techLogos:hover {
+  transform: scale(1.2); /* Slightly enlarge on hover (20% bigger) */
+}
+
+.techLinks {
+  height: 3.5rem; /* Size of social logos */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.techLinks:hover {
+  transform: scale(1.2); /* Slightly enlarge on hover (20% bigger) */
 }
 
 .suitcase {
@@ -65,7 +113,7 @@
 }
 
 .btn {
-  background: white;
+  background: rgb(191, 193, 192);
   margin: 1rem 0;
   padding: 0.75rem 2rem;
   border: none;
