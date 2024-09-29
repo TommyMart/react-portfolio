@@ -1,6 +1,5 @@
 import React from 'react';
 import './intro.css';
-import { Link } from 'react-router-dom';
 import html from '../../assets/html.png';
 import JS from '../../assets/js.png';
 import css from '../../assets/css.png'
