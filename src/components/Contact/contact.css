@@ -8,13 +8,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
 }
 
 .contactPageTitle {
   font-size: 3rem;
   margin-bottom: 4rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .contactDesc {
@@ -100,7 +100,7 @@
 
 @media screen and (max-width: 720px) {
   .contactPageTitle {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 3rem;
     margin-top: 3rem;
   }
@@ -116,5 +116,8 @@
   }
   .acknowledge {
     margin-top: 2rem;
+  }
+  .contactPageTitle {
+    margin-top: 0;
   }
 }
