@@ -4,6 +4,7 @@ import api from '../../assets/api.png'
 import pythonApp from '../../assets/highscores.png'
 import pokemon from '../../assets/pokemon.png'
 import diceRoller from '../../assets/diceRollingApp.png'
+import portfolio from '../../assets/react-portfolio.png'
 
 
 import React from 'react'
@@ -58,8 +59,20 @@ const Projects = () => {
                     </a>
                 </div>
             </div>
+            <div className='projectBar'>
+                
+                <div className='projectBarText'>
+                    <h2 className='projectTitle'>Portfolio Website</h2>
+                    <img src={portfolio} alt='' className='projectBarImg'></img>
+                    <p className='projectDesc'>This portfolio website, developed using React, showcases my expertise in modern web development. It leverages powerful tools such as React Scroll, React Router, EmailJS, and hooks to create a seamless and interactive user experience. The minimalist design not only highlights my projects but also embodies a contemporary aesthetic, ensuring a clean and engaging interface.</p>
+                    <a href="https://github.com/TommyMart/react-portfolio" target="_blank" rel="noopener noreferrer">
+                    <button className='repoBtn'>Visit Repository</button>
+                    </a>
+                </div>
+            </div>
+            
         </div>
-
+        <div className='alertMessage'><p>More Coming Soon!</p></div>
     </section>
   )
 }

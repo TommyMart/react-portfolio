@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.47a1dec4.css",
-    "main.js": "/static/js/main.479dd318.js",
+    "main.css": "/static/css/main.ee9c1c83.css",
+    "main.js": "/static/js/main.af406faa.js",
     "static/media/pokemon.png": "/static/media/pokemon.b524195b8f83fa9f8a65.png",
+    "static/media/react-portfolio.png": "/static/media/react-portfolio.3afdbbec5509d95b7bc1.png",
     "static/media/api.png": "/static/media/api.a201b0555d285d789a2b.png",
     "static/media/highscores.png": "/static/media/highscores.02948c513cb9709d1c99.png",
     "static/media/speech-bubble.png": "/static/media/speech-bubble.305dd839495bf199a061.png",
     "static/media/diceRollingApp.png": "/static/media/diceRollingApp.a05f77c3030695943cd3.png",
     "index.html": "/index.html",
-    "main.47a1dec4.css.map": "/static/css/main.47a1dec4.css.map",
-    "main.479dd318.js.map": "/static/js/main.479dd318.js.map"
+    "main.ee9c1c83.css.map": "/static/css/main.ee9c1c83.css.map",
+    "main.af406faa.js.map": "/static/js/main.af406faa.js.map"
   },
   "entrypoints": [
-    "static/css/main.47a1dec4.css",
-    "static/js/main.479dd318.js"
+    "static/css/main.ee9c1c83.css",
+    "static/js/main.af406faa.js"
   ]
 }

@@ -15,13 +15,14 @@ import github from '../../assets/github.png'
 import linkedin from '../../assets/linkedin.png'
 import download from '../../assets/download.png'
 import mail from '../../assets/mail.png'
+// import profilePic from '../../assets/profile-pic.jpeg'
 
 
 
 const Intro = () => {
   return (
     <section id="intro" >
-
+      {/* <img src={profilePic} alt='' className='profilePic'></img> */}
         <div className='introContent'>
             <span className='hello'>Hello, </span>
             <span className='introText'>I'm <span className='introName'>Tom Martin</span> <br />A Full Stack Developer.</span>
@@ -57,7 +58,7 @@ const Intro = () => {
         </div>
 
        
-
+    
     </section>
   )
 }

@@ -112,6 +112,14 @@
   margin-right: 0.5rem;
   object-fit: cover;
 }
+
+/* .profilePic {
+  display: block;
+  height: 30vh;
+  width: 30vh;
+  border-radius: 10rem;
+} */
+
 /* 
 .btn {
   background: rgb(241, 242, 242);
