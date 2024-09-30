@@ -8,11 +8,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 70px;
 }
 
 .contactPageTitle {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
 }
 
 .contactDesc {
@@ -75,13 +77,17 @@
   align-items: center;
   justify-content: center;
   /* padding: 0 1rem; */
-  margin-top: 1rem;
+  margin-top: 2rem;
   border-radius: 2rem;
 }
 
 .acknowledge {
-  margin-top: 2rem;
+  margin-top: 4rem;
   font-weight: 200;
+  display: flex;
+  align-items: flex-end;
+  height: 100%; /* Ensure the container has height */
+  position: relative;
 }
 
 .contactInfo {
@@ -90,4 +96,25 @@
 
 .infoSection {
   margin: 3rem 2rem;
+}
+
+@media screen and (max-width: 720px) {
+  .contactPageTitle {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  #contactPage {
+    padding-bottom: 0;
+  }
+  .infoSection {
+    margin: 2rem 1rem;
+    margin-bottom: 0;
+  }
+  .submitBtn {
+    margin-top: 1rem;
+  }
+  .acknowledge {
+    margin-top: 2rem;
+  }
 }

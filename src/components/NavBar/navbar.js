@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './navbar.css';
 import contactImg from '../../assets/speech-bubble.png'
 import { Link } from 'react-scroll';
-import mail from '../../assets/mail.png'
+import menu from '../../assets/menu.png'
+
 
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false)
+
   return (
     <nav className='navbar'>
       <section className='navbar-content'>
@@ -46,6 +49,7 @@ const Navbar = () => {
       </Link>
 
       <Link 
+        
         activeClass='active' 
         to='contact' 
         spy={true} 
@@ -65,6 +69,56 @@ const Navbar = () => {
             Message
         </button>
       </section>
+      <div className='navMenu' style={{display: showMenu? 'flex' : 'none'}}>
+      <Link 
+        activeClass='active' 
+        to='intro' 
+        spy={true} 
+        smooth={true} 
+        offset={-100} 
+        duration={500} 
+        className='listItem' onClick={() =>setShowMenu(false)} >
+        Home
+      </Link>
+
+      <Link 
+        activeClass='active' 
+        to='skills' 
+        spy={true} 
+        smooth={true} 
+        offset={-100} 
+        duration={500} 
+        className='listItem' onClick={() =>setShowMenu(false)} >
+        About
+      </Link>
+
+      <Link 
+        activeClass='active' 
+        to='projects' 
+        spy={true} 
+        smooth={true} 
+        offset={-100} 
+        duration={500} 
+        className='listItem' onClick={() =>setShowMenu(false)} >
+        Projects
+      </Link>
+
+      <Link 
+        
+        activeClass='active' 
+        to='contact' 
+        spy={true} 
+        smooth={true} 
+        offset={-100} 
+        duration={500} 
+        className='listItem' onClick={() =>setShowMenu(false)} >
+        Contact
+      </Link>
+    </div>
+    <img 
+        src={menu} alt='Menu' className='mobMenu' onClick={() => setShowMenu(!showMenu)}
+          
+        />
     </nav>
   )
 }

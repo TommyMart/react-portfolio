@@ -22,7 +22,7 @@
   font-weight: 300;
   font-size: 1rem;
   max-width: 50rem;
-  /* padding: 0 2rem; */
+  padding: 0 2rem;
   /* margin: 1 5rem; */
   /* margin: 1.5rem; */
   text-align: left;
@@ -56,4 +56,17 @@
 .skillBarText > p {
   font-size: 0.9rem;
   font-weight: 200;
+  padding: 0;
+}
+
+@media screen and (max-width: 530px) {
+  .skillBar {
+    margin: 2rem;
+  }
+  .skillBars {
+    margin: 0 0rem;
+  }
+  .skillTitle {
+    padding-top: 1.5rem;
+  }
 }

@@ -73,6 +73,7 @@
   margin-top: 1rem;
   font-size: medium;
   font-weight: 100;
+  margin-right: 12rem;
 }
 
 .techLogoWrapper {
@@ -170,4 +171,30 @@
 .introButtons {
   display: flex;
   gap: 5px;
+}
+
+@media screen and (max-width: 530px) {
+  .introText {
+    font-size: 2.5rem;
+  }
+  .techLogos {
+    margin-bottom: 0rem;
+    height: 1.8rem;
+  }
+  .techLinks {
+    height: 2.5rem;
+  }
+  .btn {
+    padding: 6px 12px;
+  }
+  .introContent {
+    margin-top: 0rem;
+  }
+  .introPara {
+    margin-right: 4rem;
+  }
+  .introContent {
+    justify-content: flex-start;
+    margin-top: 6rem;
+  }
 }
