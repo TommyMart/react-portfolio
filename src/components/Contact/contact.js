@@ -1,20 +1,40 @@
 
-import React from 'react'
+import React, { useRef } from 'react'
 import './contact.css'
-
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_wg8j5py', 'template_8rvxt36', form.current, {
+        publicKey: 'vOclEW_YSx6dM_1Fi',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return (
     <>
     <section id='contactPage'>
         <div className='contact'>
             <h1 className='contactPageTitle'>Contact Me</h1>
             <span className='contactDesc'>Let's chat! Please fill out the form below.</span>
-            <form className='contactForm'>
-                <input type='text' className='name' placeholder='Your Name'></input>
-                <input type='email' className='email' placeholder='Your Email'></input>
-                <textarea name='message' rows="5" placeholder='Your Message' className='msg'></textarea>
-                <button type='submit' values='Send' className='submitBtn'>Submit</button>
+            <form className='contactForm' ref={form} onSubmit={sendEmail}>
+                <input type='text' className='name' placeholder='Your Name' name='from_name' required></input>
+                <input type='email' className='email' placeholder='Your Email' name='from_email' required></input>
+                <textarea name='message' rows="5" placeholder='Your Message' className='msg' required></textarea>
+                <button type='submit'  className='submitBtn'>Submit</button>
             </form>
           <div className='infoSection'>
             <p className='contactInfo'>Thomas Martin</p>
