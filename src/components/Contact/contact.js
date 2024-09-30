@@ -17,6 +17,8 @@ const Contact = () => {
       .then(
         () => {
           console.log('SUCCESS!');
+          e.target.reset()
+          alert('Success! Your email has been sent.')
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -29,7 +31,7 @@ const Contact = () => {
     <section id='contactPage'>
         <div className='contact'>
             <h1 className='contactPageTitle'>Contact Me</h1>
-            <span className='contactDesc'>Let's chat! Please fill out the form below.</span>
+            <span className='contactDesc'>Let's chat! Please fill out the form below to get in touch.</span>
             <form className='contactForm' ref={form} onSubmit={sendEmail}>
                 <input type='text' className='name' placeholder='Your Name' name='from_name' required></input>
                 <input type='email' className='email' placeholder='Your Email' name='from_email' required></input>
