@@ -2,25 +2,38 @@ import React from 'react';
 import './intro.css';
 import html from '../../assets/html.png';
 import JS from '../../assets/js.png';
-import css from '../../assets/css.png'
-import react from '../../assets/react.png'
-import python from '../../assets/python.png'
-import nodejs from '../../assets/nodejs.png'
-import express from '../../assets/expressjs.png'
-import postgres from '../../assets/postgres.png'
-import nextjs from '../../assets/nextjs.png'
-import adobe from '../../assets/adobe.png'
-import figma from '../../assets/figma.png'
-import github from '../../assets/github.png'
-import linkedin from '../../assets/linkedin.png'
-import download from '../../assets/download.png'
-import mail from '../../assets/mail.png'
+import css from '../../assets/css.png';
+import react from '../../assets/react.png';
+import python from '../../assets/python.png';
+import nodejs from '../../assets/nodejs.png';
+import express from '../../assets/expressjs.png';
+import postgres from '../../assets/postgres.png';
+import nextjs from '../../assets/nextjs.png';
+import adobe from '../../assets/adobe.png';
+import figma from '../../assets/figma.png';
+import github from '../../assets/github.png';
+import linkedin from '../../assets/linkedin.png';
+import download from '../../assets/download.png';
+import mail from '../../assets/mail.png';
+
 // import profilePic from '../../assets/profile-pic.jpeg'
 
 
 
 const Intro = () => {
-  return (
+  
+    // Alternative way to add downloadable PDF link
+    // const onButtonClick = () => {
+    //   const pdfURL = "/resume26:9.pdf";
+    //   const link = document.createElement("a");
+    //   link.href = pdfURL;
+    //   link.download = "/resume26:9.pdf";
+    //   document.body.appendChild(link);
+    //   link.click();
+    //   document.body.removeChild(link);
+    // }
+
+    return (
     <section id="intro" >
       {/* <img src={profilePic} alt='' className='profilePic'></img> */}
         <div className='introContent'>
@@ -45,12 +58,13 @@ const Intro = () => {
               <a href="https://github.com/TommyMart" target="_blank" rel="noopener noreferrer">
               <img src={github} alt='Express' className='techLinks' />
               </a>
-              <a href="https://www.linkedin.com/in/tom-martin-9b24a4103" target="_blank" rel="noopener noreferrer">
+              <a href={"https://www.linkedin.com/in/tom-martin-9b24a4103" }target="_blank" rel="noopener noreferrer">
               <img src={linkedin} alt='Express' className='techLinks' />
               </a>
               </div>
               <div className='introButtons'>
-              <a href='./resume26:9.pdf' download><button className='btn'><img src={download} alt='suitcase' className='suitcase'/>Resume</button></a>
+              <a href='/ThomasMartin-Resume.pdf' download><button className='btn'><img src={download} alt='suitcase' className='suitcase'/>Resume</button></a>
+              {/* <button className='btn' onClick={onButtonClick}><img src={download} alt='suitcase' className='suitcase'/>Resume</button> */}
               <a href='mailto:thomas.h.martin89@gmail.com' ><button className='btn'><img src={mail} alt='suitcase' className='suitcase'/>Contact Me</button></a>
               </div>
             </div>
