@@ -66,7 +66,7 @@ const Projects = () => {
                 <div className='projectBarText'>
                     <h2 className='projectTitle'>Pokemon API Game</h2>
                     <img src={pokemon} alt='' className='projectBarImg'></img>
-                    <p className='projectDesc'>Dive into the exciting world of my Pokemon Browser Game, built with JavaScript and the Pokemon API. In this interactive web application, players can catch Pokemon that appear on the screen using their Pokemon ball cursor, aiming for a high score. The game features a competitive scoreboard to track your best catches and allows users to switch between different themes for a personalised experience. This project highlights my skills in API integration, event handling, and creating engaging user interfaces, all while celebrating the fun of Pokemon-catching</p>
+                    <p className='projectDesc'>Dive into the exciting world of my Pokemon Browser Game, built with JavaScript and the Pokemon API. In this interactive web application, players can catch Pokemon that appear on the screen using their Pokemon ball cursor, aiming for a high score. The game features a competitive scoreboard to track your best catches and allows users to switch between different themes for a personalised experience. This project highlights my skills in API integration, event handling, and creating engaging user interfaces, all while celebrating the fun of Pokemon-catching.</p>
                     <a href="https://catch-a-pokemon.netlify.app" target="_blank" rel="noopener noreferrer">
                     <button className='repoBtn'>Visit Website</button>
                     </a>
