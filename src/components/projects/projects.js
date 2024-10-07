@@ -5,6 +5,7 @@ import pythonApp from '../../assets/highscores.png'
 import pokemon from '../../assets/pokemon.png'
 import diceRoller from '../../assets/diceRollingApp.png'
 import portfolio from '../../assets/react-portfolio.png'
+import chatbot from '../../assets/chatbot.png'
 
 
 import React from 'react'
@@ -14,7 +15,30 @@ const Projects = () => {
     <section id='projects'>
         <h2 className='projectsTitle'>Projects</h2>
         <span className='projectsDesc'>The projects in my portfolio come from a mix of academic assignments, personal passion projects, and ongoing work, not yet including my current full-stack application using the MERN stack for my final assignment. Some were built as part of structured coursework, where I applied theoretical knowledge to create real-world, functional applications. Others were developed purely for fun, driven by my curiosity to explore new technologies and sharpen my skills. This blend of formal education, self-directed exploration, and continuous project development has strengthened my expertise as a full-stack developer.</span>
+        
         <div className='projects'>
+        <div className='projectBar'>
+                
+                <div className='projectBarText'>
+                    <h2 className='projectTitle'>Portfolio Website</h2>
+                    <img src={portfolio} alt='' className='projectBarImg'></img>
+                    <p className='projectDesc'>This portfolio website, developed using React, showcases my expertise in modern web development. It leverages powerful tools such as React Scroll, React Router, EmailJS, and hooks to create a seamless and interactive user experience. The minimalist design not only highlights my projects but also embodies a contemporary aesthetic, ensuring a clean and engaging interface.</p>
+                    <a href="https://github.com/TommyMart/react-portfolio" target="_blank" rel="noopener noreferrer">
+                    <button className='repoBtn'>Visit Repository</button>
+                    </a>
+                </div>
+            </div>
+            <div className='projectBar'>
+                
+                <div className='projectBarText'>
+                    <h2 className='projectTitle'>Tutorial Chat Bot</h2>
+                    <img src={chatbot} alt='' className='projectBarImg'></img>
+                    <p className='projectDesc'>The OpenAI Electronic Music Tutorial App is an innovative platform designed to help users enhance their music production skills in electronic genres. By leveraging the power of OpenAI's language model, the app provides personalised guidance dynamically tailored to each user's experience level, age, and preferred production methods. Users can engage in dynamic conversations with the AI, asking questions and receiving real-time feedback and tutorials, all while exploring various aspects of electronic music creation. </p>
+                    <a href="https://github.com/TommyMart/music-chat-bot" target="_blank" rel="noopener noreferrer">
+                    <button className='repoBtn'>Visit Repository</button>
+                    </a>
+                </div>
+            </div>
             <div className='projectBar'>
                 
                 <div className='projectBarText'>
@@ -59,17 +83,7 @@ const Projects = () => {
                     </a>
                 </div>
             </div>
-            <div className='projectBar'>
-                
-                <div className='projectBarText'>
-                    <h2 className='projectTitle'>Portfolio Website</h2>
-                    <img src={portfolio} alt='' className='projectBarImg'></img>
-                    <p className='projectDesc'>This portfolio website, developed using React, showcases my expertise in modern web development. It leverages powerful tools such as React Scroll, React Router, EmailJS, and hooks to create a seamless and interactive user experience. The minimalist design not only highlights my projects but also embodies a contemporary aesthetic, ensuring a clean and engaging interface.</p>
-                    <a href="https://github.com/TommyMart/react-portfolio" target="_blank" rel="noopener noreferrer">
-                    <button className='repoBtn'>Visit Repository</button>
-                    </a>
-                </div>
-            </div>
+            
             
         </div>
         <div className='alertMessage'><p>More Coming Soon!</p></div>
