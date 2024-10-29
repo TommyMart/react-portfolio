@@ -50,7 +50,7 @@ const Intro = () => {
               <img src={figma} alt='Express' className='techLogos' />
               <img src={postgres} alt='postgreSQL' className='techLogos' />
               <img src={react} alt='React' className='techLogos' />
-              <img src={nextjs} alt='NextJS' className='techLogos' />
+              {/* <img src={nextjs} alt='NextJS' className='techLogos' /> */}
               <img src={nodejs} alt='NodeJS' className='techLogos' />
               <img src={express} alt='Express' className='techLogos' />
               <br/>
