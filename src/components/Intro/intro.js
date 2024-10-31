@@ -24,45 +24,55 @@ const Intro = () => {
 
     // Code to display moving tech logos 
 
-    // const [displayedLogos, setDisplayedLogos] = useState([]);
+    const [displayedLogos, setDisplayedLogos] = useState([]);
+    const [cycle, setCycle] = useState(0);
+    
 
-    // const techLogos = useMemo(() => [
-    //     { src: html, alt: 'HTML' },
-    //     { src: css, alt: 'CSS' },
-    //     { src: JS, alt: 'JavaScript' },
-    //     { src: python, alt: 'Python' },
-    //     { src: adobe, alt: 'Adobe' },
-    //     { src: figma, alt: 'Figma' },
-    //     { src: postgres, alt: 'PostgreSQL' },
-    //     { src: react, alt: 'React' },
-    //     { src: nodejs, alt: 'NodeJS' },
-    //     { src: express, alt: 'Express' }
-    // ], []);
+    const techLogos = useMemo(() => [
+        { src: html, alt: 'HTML' },
+        { src: html, alt: 'HTML' },
+        { src: css, alt: 'CSS' },
+        { src: JS, alt: 'JavaScript' },
+        { src: python, alt: 'Python' },
+        { src: adobe, alt: 'Adobe' },
+        { src: figma, alt: 'Figma' },
+        { src: postgres, alt: 'PostgreSQL' },
+        { src: react, alt: 'React' },
+        { src: nodejs, alt: 'NodeJS' },
+        { src: express, alt: 'Express' }
+    ], []);
 
-    // const speed = 500; 
-    // const resetDelay = 1000;
+    const speed = 500; 
+    const resetDelay = 1000;
 
-    // useEffect(() => {
-    //   let index = 0;
+    useEffect(() => {
+      let index = 0;
 
-    //   const showLogos = () => {
-    //     if (index < techLogos.length) {
-    //       // Show one after another keeping the previous logos
-    //       setDisplayedLogos(prevLogos => [...prevLogos + techLogos[index]]);
-    //       index++;
-    //       setTimeout(showLogos, speed); 
-    //     } else {
-    //       // Clear logos after showing them
-    //       setTimeout(() => {
-    //         setDisplayedLogos([]); // Clear useState array
-    //         index = 0; // Reset to start again
-    //         setTimeout(showLogos, speed);
-    //       }, resetDelay);
-    //     }
-    //   };
-    //   showLogos();
+      const intervalId = setInterval(() => {
+        if (index < techLogos.length) {
+          // Show one after another keeping the previous logos
+          setDisplayedLogos(prevLogos => [...prevLogos, techLogos[index]]);
+          index++;
+          
+        } else {
+          // Clear logos after showing them
+          clearInterval(intervalId)
+          setTimeout(() => {
+            setDisplayedLogos([]); // Clear useState array
+            setCycle(prevCycle => prevCycle + 1);
+          }, resetDelay);
+        
+      };
+    }, speed)
+      
+    return () => clearInterval(intervalId);
        
-    // }, [techLogos]);
+    }, [cycle, techLogos]);
+
+    // Debug log
+    useEffect(() => {
+      console.log('Current displayed logos:', displayedLogos); 
+  }, [displayedLogos]);
 
     return (
     <section id="intro" >
@@ -76,16 +86,16 @@ const Intro = () => {
             <div className='techLogoWrapper'>
 
               {/* Code to implement moving tech logos */}
-              {/* <div className='techLogoMovingArray'>
-              {displayedLogos.map((logo, index) => (
-                <img key={index} src={logo.src} alt={logo.alt} className='techLogos'/>
-              ))}
+              <div className='techLogoDisplay'>
+              {displayedLogos.map((logo, index) => 
+                logo ? <img key={index} src={logo.src} alt={logo.alt} className='techLogos'/> : null
+              )}
 
-              </div> */}
+              </div>
 
 
 
-              <img src={html} alt='HTML' className='techLogos' />
+              {/* <img src={html} alt='HTML' className='techLogos' />
               <img src={css} alt='CSS' className='techLogos' />
               <img src={JS} alt='JavaScript' className='techLogos' />
               <img src={python} alt='HTML5' className='techLogos' />
@@ -93,9 +103,9 @@ const Intro = () => {
               <img src={figma} alt='Express' className='techLogos' />
               <img src={postgres} alt='postgreSQL' className='techLogos' />
               <img src={react} alt='React' className='techLogos' />
-              {/* <img src={nextjs} alt='NextJS' className='techLogos' /> */}
+              <img src={nextjs} alt='NextJS' className='techLogos' />
               <img src={nodejs} alt='NodeJS' className='techLogos' />
-              <img src={express} alt='Express' className='techLogos' /> 
+              <img src={express} alt='Express' className='techLogos' />  */}
 
               
 

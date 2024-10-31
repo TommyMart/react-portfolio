@@ -38,6 +38,12 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
 .bg:hover {
   transform: rotate(-2deg) translate(20px, -20px) scale(1.02);
   box-shadow: 2px 12px 30px rgba(0, 0, 0, 0.6); /* Longer, darker shadow on hover */
@@ -88,7 +94,11 @@
 
 .techLogos {
   height: 2.5rem; /* Size of tech logos */
+  width: 2.5rem;
+  object-fit: contain;
+  border: none;
   transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  z-index: 1;
 }
 
 .techLogos:hover {
@@ -174,6 +184,10 @@
   margin-top: 1rem;
   border-radius: 2rem;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.techLogoDisplay {
+  height: 3rem;
 }
 
 .introButtons {
