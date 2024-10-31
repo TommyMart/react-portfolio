@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import './intro.css';
 import html from '../../assets/html.png';
 import JS from '../../assets/js.png';
@@ -8,7 +8,7 @@ import python from '../../assets/python.png';
 import nodejs from '../../assets/nodejs.png';
 import express from '../../assets/expressjs.png';
 import postgres from '../../assets/postgres.png';
-import nextjs from '../../assets/nextjs.png';
+// import nextjs from '../../assets/nextjs.png';
 import adobe from '../../assets/adobe.png';
 import figma from '../../assets/figma.png';
 import github from '../../assets/github.png';
@@ -21,27 +21,70 @@ import mail from '../../assets/mail.png';
 
 
 const Intro = () => {
-  
-    // Alternative way to add downloadable PDF link
-    // const onButtonClick = () => {
-    //   const pdfURL = "/resume26:9.pdf";
-    //   const link = document.createElement("a");
-    //   link.href = pdfURL;
-    //   link.download = "/resume26:9.pdf";
-    //   document.body.appendChild(link);
-    //   link.click();
-    //   document.body.removeChild(link);
-    // }
+
+    // Code to display moving tech logos 
+
+    // const [displayedLogos, setDisplayedLogos] = useState([]);
+
+    // const techLogos = useMemo(() => [
+    //     { src: html, alt: 'HTML' },
+    //     { src: css, alt: 'CSS' },
+    //     { src: JS, alt: 'JavaScript' },
+    //     { src: python, alt: 'Python' },
+    //     { src: adobe, alt: 'Adobe' },
+    //     { src: figma, alt: 'Figma' },
+    //     { src: postgres, alt: 'PostgreSQL' },
+    //     { src: react, alt: 'React' },
+    //     { src: nodejs, alt: 'NodeJS' },
+    //     { src: express, alt: 'Express' }
+    // ], []);
+
+    // const speed = 500; 
+    // const resetDelay = 1000;
+
+    // useEffect(() => {
+    //   let index = 0;
+
+    //   const showLogos = () => {
+    //     if (index < techLogos.length) {
+    //       // Show one after another keeping the previous logos
+    //       setDisplayedLogos(prevLogos => [...prevLogos + techLogos[index]]);
+    //       index++;
+    //       setTimeout(showLogos, speed); 
+    //     } else {
+    //       // Clear logos after showing them
+    //       setTimeout(() => {
+    //         setDisplayedLogos([]); // Clear useState array
+    //         index = 0; // Reset to start again
+    //         setTimeout(showLogos, speed);
+    //       }, resetDelay);
+    //     }
+    //   };
+    //   showLogos();
+       
+    // }, [techLogos]);
 
     return (
     <section id="intro" >
       {/* <img src={profilePic} alt='' className='profilePic'></img> */}
         <div className='introContent'>
             <span className='hello'>Hello, </span>
-            <span className='introText'>I'm <span className='introName'>Tom Martin</span> <br />A Full Stack Developer.</span>
+            {/* <span className='introText' >{displayedText}</span> */}
+            <span className='introText'>I'm <span className='introName'>Tom Martin</span> <br />A Junior Full Stack Developer.</span>
             <p className='introPara'>A passionate junior full-stack developer and designer dedicated to crafting <b><i>beautiful, dynamic, and intuitive </i></b>applications that solve user problems and elevate experiences.</p>
             
             <div className='techLogoWrapper'>
+
+              {/* Code to implement moving tech logos */}
+              {/* <div className='techLogoMovingArray'>
+              {displayedLogos.map((logo, index) => (
+                <img key={index} src={logo.src} alt={logo.alt} className='techLogos'/>
+              ))}
+
+              </div> */}
+
+
+
               <img src={html} alt='HTML' className='techLogos' />
               <img src={css} alt='CSS' className='techLogos' />
               <img src={JS} alt='JavaScript' className='techLogos' />
@@ -52,7 +95,10 @@ const Intro = () => {
               <img src={react} alt='React' className='techLogos' />
               {/* <img src={nextjs} alt='NextJS' className='techLogos' /> */}
               <img src={nodejs} alt='NodeJS' className='techLogos' />
-              <img src={express} alt='Express' className='techLogos' />
+              <img src={express} alt='Express' className='techLogos' /> 
+
+              
+
               <br/>
               <div className='logoLinks'>
               <a href="https://github.com/TommyMart" target="_blank" rel="noopener noreferrer">
@@ -75,6 +121,8 @@ const Intro = () => {
     
     </section>
   )
+  
 }
+
 
 export default Intro;

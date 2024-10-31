@@ -20,28 +20,6 @@ const Projects = () => {
         <div className='projectBar'>
                 
                 <div className='projectBarText'>
-                    <h2 className='projectTitle'>Portfolio Website</h2>
-                    <img src={portfolio} alt='' className='projectBarImg'></img>
-                    <p className='projectDesc'>This portfolio website, developed using React, showcases my expertise in modern web development. It leverages powerful tools such as React Scroll, React Router, EmailJS, and hooks to create a seamless and interactive user experience. The minimalist design not only highlights my projects but also embodies a contemporary aesthetic, ensuring a clean and engaging interface.</p>
-                    <a href="https://github.com/TommyMart/react-portfolio" target="_blank" rel="noopener noreferrer">
-                    <button className='repoBtn'>Visit Repository</button>
-                    </a>
-                </div>
-            </div>
-            <div className='projectBar'>
-                
-                <div className='projectBarText'>
-                    <h2 className='projectTitle'>Tutorial Chat Bot</h2>
-                    <img src={chatbot} alt='' className='projectBarImg'></img>
-                    <p className='projectDesc'>The OpenAI Electronic Music Tutorial App is an innovative platform designed to help users enhance their music production skills in electronic genres. By leveraging the power of OpenAI's language model, the app provides personalised guidance dynamically tailored to each user's experience level, age, and preferred production methods. Users can engage in dynamic conversations with the AI, asking questions and receiving real-time feedback and tutorials, all while exploring various aspects of electronic music creation. </p>
-                    <a href="https://github.com/TommyMart/music-chat-bot" target="_blank" rel="noopener noreferrer">
-                    <button className='repoBtn'>Visit Repository</button>
-                    </a>
-                </div>
-            </div>
-            <div className='projectBar'>
-                
-                <div className='projectBarText'>
                     <h2 className='projectTitle'>API Webserver</h2>
                     <img src={api} alt='' className='projectBarImg'></img>
                     
@@ -61,6 +39,29 @@ const Projects = () => {
                     </a>
                 </div>
             </div>
+        <div className='projectBar'>
+                
+                <div className='projectBarText'>
+                    <h2 className='projectTitle'>Portfolio Website</h2>
+                    <img src={portfolio} alt='' className='projectBarImg'></img>
+                    <p className='projectDesc'>This portfolio website, developed using React, showcases my expertise in modern web development. It leverages powerful tools such as React Scroll, React Router, EmailJS, and hooks to create a seamless and interactive user experience. The minimalist design not only highlights my projects but also embodies a contemporary aesthetic, ensuring a clean and engaging interface.</p>
+                    <a href="https://github.com/TommyMart/react-portfolio" target="_blank" rel="noopener noreferrer">
+                    <button className='repoBtn'>Visit Repository</button>
+                    </a>
+                </div>
+            </div>
+            <div className='projectBar'>
+                
+                <div className='projectBarText'>
+                    <h2 className='projectTitle'>Tutorial Chat Bot</h2>
+                    <img src={chatbot} alt='' className='projectBarImg'></img>
+                    <p className='projectDesc'>The OpenAI Electronic Music Tutorial App is an innovative platform designed to help users enhance their music production skills in electronic genres. By leveraging the power of OpenAI's language model, the app provides personalised guidance dynamically tailored to each user's experience level, age, and preferred production methods. Users can engage in dynamic conversations with the AI, asking questions and receiving real-time feedback and tutorials, all while exploring various aspects of electronic music creation. </p>
+                    <a href="https://github.com/TommyMart/music-chat-bot" target="_blank" rel="noopener noreferrer">
+                    <button className='repoBtn'>Visit Repository</button>
+                    </a>
+                </div>
+            </div>
+            
             <div className='projectBar'>
                 
                 <div className='projectBarText'>
