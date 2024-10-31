@@ -51,7 +51,12 @@ const Intro = () => {
       const intervalId = setInterval(() => {
         if (index < techLogos.length) {
           // Show one after another keeping the previous logos
-          setDisplayedLogos(prevLogos => [...prevLogos, techLogos[index]]);
+          setDisplayedLogos(prevLogos => {
+            if (!prevLogos.includes(techLogos[index])) {
+              return [...prevLogos, techLogos[index]];
+            }
+            return prevLogos;
+          });
           index++;
           
         } else {
