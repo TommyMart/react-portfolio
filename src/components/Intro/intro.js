@@ -17,10 +17,7 @@ import github from '../../assets/github.png';
 import linkedin from '../../assets/linkedin.png';
 import download from '../../assets/download.png';
 import mail from '../../assets/mail.png';
-
 // import profilePic from '../../assets/profile-pic.jpeg'
-
-
 
 const Intro = () => {
 
@@ -28,7 +25,6 @@ const Intro = () => {
 
     const [displayedLogos, setDisplayedLogos] = useState([]);
     const [cycle, setCycle] = useState(0);
-    
 
     const techLogos = useMemo(() => [
         { src: html, alt: 'HTML' },
@@ -102,8 +98,6 @@ const Intro = () => {
 
               </div>
 
-
-
               {/* <img src={html} alt='HTML' className='techLogos' />
               <img src={css} alt='CSS' className='techLogos' />
               <img src={JS} alt='JavaScript' className='techLogos' />
@@ -115,8 +109,6 @@ const Intro = () => {
               <img src={nextjs} alt='NextJS' className='techLogos' />
               <img src={nodejs} alt='NodeJS' className='techLogos' />
               <img src={express} alt='Express' className='techLogos' />  */}
-
-              
 
               <br/>
               <div className='logoLinks'>
@@ -133,15 +125,9 @@ const Intro = () => {
               <a href='mailto:thomas.h.martin89@gmail.com' ><button className='btn'><img src={mail} alt='suitcase' className='suitcase'/>Contact Me</button></a>
               </div>
             </div>
-            
         </div>
-
-       
-    
     </section>
   )
-  
 }
-
 
 export default Intro;
