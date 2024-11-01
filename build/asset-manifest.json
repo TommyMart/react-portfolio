@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.594a09c8.css",
-    "main.js": "/static/js/main.a490c0df.js",
+    "main.js": "/static/js/main.007a5c4a.js",
     "static/media/pokemon.png": "/static/media/pokemon.b524195b8f83fa9f8a65.png",
     "static/media/chatbot.png": "/static/media/chatbot.841c2e8f5cfc769962e6.png",
     "static/media/react-portfolio.png": "/static/media/react-portfolio.3afdbbec5509d95b7bc1.png",
@@ -11,10 +11,10 @@
     "static/media/diceRollingApp.png": "/static/media/diceRollingApp.a05f77c3030695943cd3.png",
     "index.html": "/index.html",
     "main.594a09c8.css.map": "/static/css/main.594a09c8.css.map",
-    "main.a490c0df.js.map": "/static/js/main.a490c0df.js.map"
+    "main.007a5c4a.js.map": "/static/js/main.007a5c4a.js.map"
   },
   "entrypoints": [
     "static/css/main.594a09c8.css",
-    "static/js/main.a490c0df.js"
+    "static/js/main.007a5c4a.js"
   ]
 }
