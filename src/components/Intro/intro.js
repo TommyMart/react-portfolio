@@ -32,14 +32,14 @@ const Intro = () => {
         { src: css, alt: 'CSS' },
         { src: JS, alt: 'JavaScript' },
         { src: python, alt: 'Python' },
-        { src: adobe, alt: 'Adobe' },
-        { src: figma, alt: 'Figma' },
         { src: postgres, alt: 'PostgreSQL' },
         { src: mongodb, alt: 'MongoDB'},
         { src: aws, alt: 'AWS' },
         { src: react, alt: 'React' },
         { src: nodejs, alt: 'NodeJS' },
-        { src: express, alt: 'Express' }
+        { src: express, alt: 'Express' },
+        { src: adobe, alt: 'Adobe' },
+        { src: figma, alt: 'Figma' }
     ], []);
 
     const speed = 500; 
