@@ -11,6 +11,8 @@ import postgres from '../../assets/postgres.png';
 // import nextjs from '../../assets/nextjs.png';
 import adobe from '../../assets/adobe.png';
 import figma from '../../assets/figma.png';
+import mongodb from '../../assets/mongodb.png'
+import aws from '../../assets/aws.png'
 import github from '../../assets/github.png';
 import linkedin from '../../assets/linkedin.png';
 import download from '../../assets/download.png';
@@ -37,6 +39,8 @@ const Intro = () => {
         { src: adobe, alt: 'Adobe' },
         { src: figma, alt: 'Figma' },
         { src: postgres, alt: 'PostgreSQL' },
+        { src: mongodb, alt: 'MongoDB'},
+        { src: aws, alt: 'AWS' },
         { src: react, alt: 'React' },
         { src: nodejs, alt: 'NodeJS' },
         { src: express, alt: 'Express' }
