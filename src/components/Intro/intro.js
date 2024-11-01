@@ -128,7 +128,7 @@ const Intro = () => {
               </a>
               </div>
               <div className='introButtons'>
-              <a href='/TomMartinResume.pdf' download><button className='btn'><img src={download} alt='suitcase' className='suitcase'/>Resume</button></a>
+              <a href='/TomMartin-Resume.pdf' download><button className='btn'><img src={download} alt='suitcase' className='suitcase'/>Resume</button></a>
               {/* <button className='btn' onClick={onButtonClick}><img src={download} alt='suitcase' className='suitcase'/>Resume</button> */}
               <a href='mailto:thomas.h.martin89@gmail.com' ><button className='btn'><img src={mail} alt='suitcase' className='suitcase'/>Contact Me</button></a>
               </div>
