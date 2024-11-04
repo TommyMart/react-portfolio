@@ -86,7 +86,7 @@ const Intro = () => {
             <span className='hello'>Hello, </span>
             {/* <span className='introText' >{displayedText}</span> */}
             <span className='introText'>I'm <span className='introName'>Tom Martin</span> <br />A Junior Full Stack Developer.</span>
-            <p className='introPara'>A passionate junior full-stack developer and designer dedicated to crafting <b><i>beautiful, dynamic, and intuitive </i></b>applications that solve user problems and elevate experiences.</p>
+            <p className='introPara'>A passionate junior full-stack developer dedicated to crafting <b><i>beautiful, dynamic, and intuitive </i></b>applications that solve user problems and elevate experiences.</p>
             
             <div className='techLogoWrapper'>
 
