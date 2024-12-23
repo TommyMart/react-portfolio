@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.c50639a0.css",
-    "main.js": "/static/js/main.6572275d.js",
+    "main.js": "/static/js/main.3bab4ed6.js",
     "static/media/pokemon.png": "/static/media/pokemon.b524195b8f83fa9f8a65.png",
     "static/media/chatbot.png": "/static/media/chatbot.841c2e8f5cfc769962e6.png",
+    "static/media/surveyBuddy.png": "/static/media/surveyBuddy.6a773513dc6b44c8d0d5.png",
     "static/media/react-portfolio.png": "/static/media/react-portfolio.3afdbbec5509d95b7bc1.png",
     "static/media/api.png": "/static/media/api.a201b0555d285d789a2b.png",
     "static/media/highscores.png": "/static/media/highscores.02948c513cb9709d1c99.png",
@@ -11,10 +12,10 @@
     "static/media/diceRollingApp.png": "/static/media/diceRollingApp.a05f77c3030695943cd3.png",
     "index.html": "/index.html",
     "main.c50639a0.css.map": "/static/css/main.c50639a0.css.map",
-    "main.6572275d.js.map": "/static/js/main.6572275d.js.map"
+    "main.3bab4ed6.js.map": "/static/js/main.3bab4ed6.js.map"
   },
   "entrypoints": [
     "static/css/main.c50639a0.css",
-    "static/js/main.6572275d.js"
+    "static/js/main.3bab4ed6.js"
   ]
 }
