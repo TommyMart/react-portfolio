@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.c50639a0.css",
-    "main.js": "/static/js/main.3bab4ed6.js",
+    "main.js": "/static/js/main.ccbe8f9d.js",
     "static/media/pokemon.png": "/static/media/pokemon.b524195b8f83fa9f8a65.png",
+    "static/media/portfolio25.png": "/static/media/portfolio25.adc1abb14d3c5887c993.png",
     "static/media/chatbot.png": "/static/media/chatbot.841c2e8f5cfc769962e6.png",
     "static/media/surveyBuddy.png": "/static/media/surveyBuddy.6a773513dc6b44c8d0d5.png",
     "static/media/react-portfolio.png": "/static/media/react-portfolio.3afdbbec5509d95b7bc1.png",
@@ -12,10 +13,10 @@
     "static/media/diceRollingApp.png": "/static/media/diceRollingApp.a05f77c3030695943cd3.png",
     "index.html": "/index.html",
     "main.c50639a0.css.map": "/static/css/main.c50639a0.css.map",
-    "main.3bab4ed6.js.map": "/static/js/main.3bab4ed6.js.map"
+    "main.ccbe8f9d.js.map": "/static/js/main.ccbe8f9d.js.map"
   },
   "entrypoints": [
     "static/css/main.c50639a0.css",
-    "static/js/main.3bab4ed6.js"
+    "static/js/main.ccbe8f9d.js"
   ]
 }

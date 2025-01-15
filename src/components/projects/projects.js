@@ -6,6 +6,7 @@ import diceRoller from "../../assets/diceRollingApp.png";
 import portfolio from "../../assets/react-portfolio.png";
 import chatbot from "../../assets/chatbot.png";
 import surveyBuddy from "../../assets/surveyBuddy.png";
+import latestPortfolio from "../../assets/portfolio25.png";
 
 import React from "react";
 
@@ -40,6 +41,29 @@ const Projects = () => {
             </p>
             <a
               href="https://github.com/Survey-Buddy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="repoBtn">View Repository</button>
+            </a>
+          </div>
+        </div>
+        <div className="projectBar">
+          <div className="projectBarText">
+            <h2 className="projectTitle">Portfolio 2.0</h2>
+            <img src={latestPortfolio} alt="" className="projectBarImg"></img>
+
+            <p className="projectDesc">
+              This updated portfolio showcases my growth as a developer,
+              building on my original site with a focus on modular components
+              and improved user experience. Using Chakra UI instead of vanilla
+              CSS, I created a cleaner, more responsive design that highlights
+              my ability to work with reusable components and modern styling
+              tools. It’s a testament to my progress and dedication to
+              continuous improvement.
+            </p>
+            <a
+              href="https://github.com/TommyMart/portfolio-jan25"
               target="_blank"
               rel="noopener noreferrer"
             >
