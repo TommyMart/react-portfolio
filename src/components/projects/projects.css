@@ -71,6 +71,12 @@
   border-radius: 0.5rem;
   background: rgb(241, 242, 242);
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1);
+}
+
+.projectBar:hover {
+  transform: scale(1.02);
 }
 
 .projectBarText {

@@ -26,6 +26,29 @@ const Projects = () => {
       <div className="projects">
         <div className="projectBar">
           <div className="projectBarText">
+            <h2 className="projectTitle">Portfolio 2.0</h2>
+            <img src={latestPortfolio} alt="" className="projectBarImg"></img>
+
+            <p className="projectDesc">
+              This updated portfolio showcases my growth as a developer,
+              building on my original site with a focus on modular components
+              and improved user experience. Using Chakra UI instead of vanilla
+              CSS, I created a cleaner, more responsive design that highlights
+              my ability to work with reusable components and modern styling
+              tools. It’s a testament to my progress and dedication to
+              continuous improvement.
+            </p>
+            <a
+              href="https://tommartin-portfolio25.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="repoBtn">View Website</button>
+            </a>
+          </div>
+        </div>
+        <div className="projectBar">
+          <div className="projectBarText">
             <h2 className="projectTitle">SurveyBuddy</h2>
             <img src={surveyBuddy} alt="" className="projectBarImg"></img>
 
@@ -40,37 +63,15 @@ const Projects = () => {
               easily create surveys and analyse results with clarity.
             </p>
             <a
-              href="https://github.com/Survey-Buddy"
+              href="https://surveybuddy.tech/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="repoBtn">View Repository</button>
+              <button className="repoBtn">View Website</button>
             </a>
           </div>
         </div>
-        <div className="projectBar">
-          <div className="projectBarText">
-            <h2 className="projectTitle">Portfolio 2.0</h2>
-            <img src={latestPortfolio} alt="" className="projectBarImg"></img>
 
-            <p className="projectDesc">
-              This updated portfolio showcases my growth as a developer,
-              building on my original site with a focus on modular components
-              and improved user experience. Using Chakra UI instead of vanilla
-              CSS, I created a cleaner, more responsive design that highlights
-              my ability to work with reusable components and modern styling
-              tools. It’s a testament to my progress and dedication to
-              continuous improvement.
-            </p>
-            <a
-              href="https://github.com/TommyMart/portfolio-jan25"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="repoBtn">View Repository</button>
-            </a>
-          </div>
-        </div>
         <div className="projectBar">
           <div className="projectBarText">
             <h2 className="projectTitle">API Webserver</h2>
@@ -136,7 +137,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="repoBtn">Visit Repository</button>
+              <button className="repoBtn">View Repository</button>
             </a>
           </div>
         </div>
@@ -159,7 +160,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="repoBtn">Visit Repository</button>
+              <button className="repoBtn">View Repository</button>
             </a>
           </div>
         </div>
@@ -184,7 +185,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="repoBtn">Visit Website</button>
+              <button className="repoBtn">View Website</button>
             </a>
           </div>
         </div>
@@ -205,7 +206,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="repoBtn">Visit Website</button>
+              <button className="repoBtn">View Website</button>
             </a>
           </div>
         </div>
